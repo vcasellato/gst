@@ -169,8 +169,13 @@ class TransactionService extends ChangeNotifier {
     if (monthly.length < 2) return 'Dados insuficientes';
 
     List<String> sortedMonths = monthly.keys.toList()..sort();
-    double lastMonth = monthly[sortedMonths[sortedMonths.length - 1]] ?? 0;
+    double lastMonth = monthly[sortedMonths.last] ?? 0;
     double previousMonth = monthly[sortedMonths[sortedMonths.length - 2]] ?? 0;
+
+    if (previousMonth == 0) {
+      // Evita divisao por zero quando nao ha gastos no mes anterior
+      return lastMonth == 0 ? 'Manteve estável' : 'Dados insuficientes';
+    }
 
     if (lastMonth > previousMonth) {
       double increase = ((lastMonth - previousMonth) / previousMonth * 100);
