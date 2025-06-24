@@ -36,7 +36,7 @@ class LineChartWidget extends StatelessWidget {
             LineChartData(
               lineTouchData: LineTouchData(
                 touchTooltipData: LineTouchTooltipData(
-                  tooltipBackgroundColor: Colors.black87,
+                  tooltipBgColor: Colors.black87,
                 ),
               ),
               lineBarsData: [
