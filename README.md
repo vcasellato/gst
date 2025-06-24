@@ -1,16 +1,12 @@
-# meu_app_gastos
+# Controle de Gastos
 
-A new Flutter project.
+Aplicativo Flutter para registrar despesas e receitas pessoais. O projeto utiliza `provider` para gerenciamento de estado e inclui exemplos simples de geração de relatórios, gráficos e notificações locais.
 
-## Getting Started
+## Funcionalidades
+- Cadastro de transações (receitas e despesas)
+- Lista de transações recentes
+- Gráficos utilizando **fl_chart**
+- Definição de orçamentos por categoria
+- Geração de relatório em PDF
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Este repositório contém apenas uma implementação de referência e algumas telas utilizam widgets de exemplo para facilitar a compilação.
