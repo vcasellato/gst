@@ -34,6 +34,11 @@ class LineChartWidget extends StatelessWidget {
           height: 200,
           child: LineChart(
             LineChartData(
+              lineTouchData: LineTouchData(
+                touchTooltipData: LineTouchTooltipData(
+                  tooltipBackgroundColor: Colors.black87,
+                ),
+              ),
               lineBarsData: [
                 LineChartBarData(
                   color: AppColors.expense,
